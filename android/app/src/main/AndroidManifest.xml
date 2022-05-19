@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jitsimeet_test">
+    package="com.example.jitsimeet_test"  xmlns:tools="http://schemas.android.com/tools">
    <application
         android:label="jitsimeet_test"
         android:name="${applicationName}"
