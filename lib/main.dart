@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jitsimeet_test/meeting.dart';
 
 void main() {
   runApp(const MyApp());
@@ -61,6 +62,10 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void startCall() {
+    TestMeeting.startMeeting();
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -106,9 +111,9 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: startCall,
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.call),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
